@@ -321,19 +321,17 @@ end
 # @return two Floats with E1 and E2
 # @example 
 def calc_E1_E2(first_smarts_pValues, second_smarts_pValues)
-  sum_E1 = 0.0
-  sum_E2 = 0.0
-  cnt = 0
+  e1vals = Array.new
+  e2vals = Array.new
   first_smarts_pValues.each do |s, p|
     if second_smarts_pValues.include?(s)
       dif = (p.to_f - second_smarts_pValues[s].to_f)
-      sum_E1 = sum_E1 + dif
-      sum_E2 = sum_E2 + dif.abs
-      cnt += 1
+      e1vals << dif
+      e2vals << dif.abs
     end
   end
-  e1 = sum_E1/cnt
-  e2 = sum_E2/cnt
+  e1 = e1vals.to_gv.median
+  e2 = e2vals.to_gv.median
   return e1, e2
 end
 
