@@ -139,6 +139,7 @@ begin
       t = Time.now
       if method == "bbrc"
         puts "[#{Time.now.iso8601(4).to_s}] BBRC params: #{algo_params.to_yaml}"
+        $stdout.flush
         feature_dataset_uri = OpenTox::RestClientWrapper.post( File.join(CONFIG[:services]["opentox-algorithm"],"fminer/bbrc"), algo_params )
       else
         algo_params["num_boots"] = num_boots
@@ -146,6 +147,7 @@ begin
         algo_params["min_sampling_support"] = min_sampling_support
         algo_params["cache"] = cache
         puts "[#{Time.now.iso8601(4).to_s}] BBRC params: #{algo_params.to_yaml}"
+        $stdout.flush
         feature_dataset_uri = OpenTox::RestClientWrapper.post( File.join(CONFIG[:services]["opentox-algorithm"],"fminer/bbrc/sample"), algo_params )
       end
       bbrc_duration = Time.now - t
@@ -219,7 +221,7 @@ begin
           end
         end
       }
-      e3Sum = e3AlongFeatures.to_gv.mean
+      e3Sum = e3AlongFeatures.to_gv.mean.abs
       puts "[#{Time.now.iso8601(4).to_s}] class proportion difference (E3): #{e3Sum}"
       $stdout.flush
 
