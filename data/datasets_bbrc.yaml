@@ -1,47 +1,27 @@
 {
 
   "SAL": {
-    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/138462"
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123403"
   },
   
   "MOU": {
-    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/138460"
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123400"
   },
   
   "MCC": {
-    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/138459"
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123401"
   },
 
   "RAT": {
-    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/138461"
-  },
-
-  "BB": {
-    "dataset": "http://toxcreate3.in-silico.ch:8086/dataset/"
-  },
-
-  "NCT": {
-    "dataset": "http://toxcreate3.in-silico.ch:8086/dataset/"
-  },
-
-  "YOSH": {
-    "dataset": "http://toxcreate3.in-silico.ch:8086/dataset/"
-  },
-
-  "YOSH2": {
-    "dataset": "http://toxcreate3.in-silico.ch:8086/dataset/"
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123402"
   },
 
   "KAZ": {
-    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/138463"
-  },
-
-  "HAM": {
-    "dataset": "http://toxcreate3.in-silico.ch:8086/dataset/271151"
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123399"
   },
 
   "MUL": {
-    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/458582"
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123404"
   }
 
 }

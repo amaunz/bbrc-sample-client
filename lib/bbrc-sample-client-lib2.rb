@@ -98,7 +98,7 @@ def getRelSupVal(classes,y,occ)
     res[idx2] += 1 if occ[idx] >= 1
   }
   
-  res = (Vector.elements(res) / y.length).to_a.collect! { |x| x.to_f } 
+  res = (Vector.elements(res) / occ.to_gv.sum.to_f).to_a.collect! { |x| x.to_f } 
 end
 
 
