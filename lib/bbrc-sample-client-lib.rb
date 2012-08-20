@@ -310,7 +310,7 @@ def get_pValuesEffects(ds_uri, subjectid)
   ds.features.each do |f, values|
     if values[RDF::type].include?(OT.Substructure)
       pValues[values[OT::smarts]] = values[OT::pValue]
-      effects[values[OT::effect]] = values[OT::effect]
+      effects[values[OT::smarts]] = values[OT::effect]
     end
   end
   return pValues, effects

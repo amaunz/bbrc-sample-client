@@ -5,7 +5,7 @@
 # @example {
 #   h1 = { "foo" => 0.96, "bar" => 0.94, "baz" => 1 }
 #   h2 = { "bar" => 0.96, "foo" => 0.96 }
-#   commonFraction(h1,h2,0.95) # 0.5
+#   correctSignFraction(h1,h2,0.95) # 0.5
 # }
 
 def correctSignFraction(h1,h2,thr)
@@ -35,7 +35,7 @@ end
 # @example {
 #   h1 = { "foo" => 1, "bar" => 0, "baz" => 1 }
 #   h2 = { "bar" => 0, "foo" => 0 }
-#   commonFraction(h1,h2) # 0.5
+#   commonFractionKV(h1,h2) # 0.5
 # }
 
 def commonFractionKV(h1,h2)
