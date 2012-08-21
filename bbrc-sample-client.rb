@@ -214,7 +214,7 @@ begin
             md_sup = getRelSupVal( classes, md_y, md_occ )
             e3PerClass = (Vector.elements(fd_sup) - Vector.elements(md_sup)).to_a
             #puts "Found '#{e3PerClass.join(',')}' E3 across classes for #{fdf}"
-            e3AlongFeatures << e3PerClass.to_gv.mean
+            e3AlongFeatures << e3PerClass.to_gv.abs.mean
             #puts "  => #{e3AlongFeatures.last} (mean)"
           else
             e3AlongFeatures << nil
