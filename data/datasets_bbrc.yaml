@@ -22,6 +22,10 @@
 
   "MUL": {
     "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1123404"
+  },
+
+  "INT": {
+    "dataset": "http://knecht6.fdm.uni-freiburg.de:8087/dataset/1635237"
   }
 
 }
