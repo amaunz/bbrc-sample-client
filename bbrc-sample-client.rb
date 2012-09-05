@@ -179,13 +179,13 @@ begin
       fd_pValues, fd_effects = get_pValuesEffects(feature_dataset_uri, subjectid)
       md_pValues, md_effects = get_pValuesEffects(matched_dataset_uri, subjectid)
       sum_E1, sum_E2 = calc_E1_E2(fd_pValues, md_pValues)
-      e4Sum = commonFractionKV(fd_effects, md_effects)
-      e5Sum = correctSignFraction(fd_pValues, md_pValues, 0.95)
+      e4Sum = correctSignFraction(fd_pValues, md_pValues, 0.95)
+      e5Sum = commonFractionKV(fd_effects, md_effects)
 
       puts "[#{Time.now.iso8601(4).to_s}] pValue difference (E1): #{sum_E1}"
       puts "[#{Time.now.iso8601(4).to_s}] pValue difference (E2): #{sum_E2}"
-      puts "[#{Time.now.iso8601(4).to_s}] common effects (E4): #{e4Sum}"
-      puts "[#{Time.now.iso8601(4).to_s}] correct significance (E5): #{e5Sum}"
+      puts "[#{Time.now.iso8601(4).to_s}] correct significance (E4): #{e4Sum}"
+      puts "[#{Time.now.iso8601(4).to_s}] common effects (E5): #{e5Sum}"
       $stdout.flush
 
       puts "                 ----- Proportions comparison -----"
